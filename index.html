@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>What's on your mind?</title>
+		<link rel="shortcut icon" href="assets/favicon.ico"/>
+		<!-- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<script src="script.js"></script>
+</head>
+<body onload='load()'>
+	<div id='search'>
+		<input type='search' id='searchText' onsearch='search(this)' onchange='search(this)' placeholder='Enter title to search'></input>
+		<img src='search.png'>
+	</div>
+	<div id='form'>
+		<input type="text" name="Title" id='title' placeholder='Enter Title Here(e.g. My New York Experience)'><br>
+		<textarea rows="10" cols="30" id='desc' name='Info' placeholder='Tell us more about it! (When i went to New York City last time)'></textarea><br>
+		<button type="button" id='submit' onclick='takeData()'>SUBMIT</button>
+	</div>
+	<div id='list'></div>
+</body>
+</html>
